@@ -11,14 +11,6 @@ export class MessageService {
 
 	constructor() { }
 
-	listen(): Observable<any> {
-		return this._listners.asObservable();
-	}
-
-	send(text: string) {
-		this._listners.next(text);
-	}
-
 	listenprocess(): Observable<any> {
 		return this._listnersprocess.asObservable();
 	}
